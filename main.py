@@ -16,7 +16,9 @@ def hello_http(request):
     else:
         name = 'World'
 
+    #list pods from GKE cluster
     list_pods()
+
     return 'Hello {}!'.format(escape(name))
 
 
